@@ -17,7 +17,10 @@ public void curso(){
 }
 
 public int notas(int nota1,int nota2,int nota3){
-    return ((this.nota1+this.nota2+this.nota3)/3);
+    this.nota1=nota1;
+    this.nota2=nota2;
+    this.nota3=nota3;
+    return ((nota1+nota2+nota3)/3);
     
 }
 
@@ -30,24 +33,22 @@ public int faltas(){
 }
  public void notaFinal(int faltas){
      if(faltas<5)
-         System.out.println("Cualificación final: "+(this.notas(nota1, nota2, nota3)+1));
+         System.out.println("Cualificación final: "+(notas(nota1, nota2, nota3)+1));
      
      if(faltas>=5 && faltas<10)
-         System.out.println("Cualificación final: "+(this.notas(nota1, nota2, nota3)));
+         System.out.println("Cualificación final: "+(notas(nota1, nota2, nota3)));
      
      if(faltas>=10 && faltas<15)
-         System.out.println("Cualificación final: "+(this.notas(nota1, nota2, nota3)-1));
+         System.out.println("Cualificación final: "+(notas(nota1, nota2, nota3)-1));
      
      if(faltas>=15 && faltas<20)
-         System.out.println("Cualificación final: "+(this.notas(nota1, nota2, nota3)-2));
+         System.out.println("Cualificación final: "+(notas(nota1, nota2, nota3)-2));
      
      if(faltas>=20)
-         System.out.println("Cualificación final: "+(this.notas(nota1, nota2, nota3)-3));
+         System.out.println("Cualificación final: "+(notas(nota1, nota2, nota3)-3));
  
  
  
  }
-
-
 
 }
