@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class Datos {
     int nota1,nota2,nota3;
     
-
-    
 public void nomeAlumno(){
     System.out.println("nome: Alumno 1");
 }
@@ -15,7 +13,11 @@ public void nomeAlumno(){
 public void curso(){
     System.out.println("Curso: 2º");
 }
-
+public int getNota(){
+     Scanner obx=new Scanner(System.in);
+        System.out.println("Nota : ");
+        return obx.nextInt();
+}
 public int notas(int nota1,int nota2,int nota3){
     this.nota1=nota1;
     this.nota2=nota2;
