@@ -1,15 +1,9 @@
-package alumnos;
-//Yasmin
-
-import java.util.Scanner;
-
-public class Alumnos {
-    public static void main(String[] args) {
+public static void main(String[] args) {
        int faltas,nota1,nota2,nota3;
        Datos d=new Datos();
        d.nomeAlumno();
        d.curso();
-        
+      /*  
         Scanner obx=new Scanner(System.in);
         System.out.println("Nota 1: ");
         nota1=obx.nextInt();
@@ -20,7 +14,11 @@ public class Alumnos {
         
         Scanner obx2=new Scanner(System.in);
         System.out.println("Nota 3: ");
-        nota3=obx2.nextInt();
+        nota3=obx2.nextInt();*/
+       
+       nota1=d.getNota();
+       nota2=d.getNota();
+       nota3=d.getNota();
         
         System.out.println("Nota media:"+d.notas(nota1, nota2, nota3));
         
